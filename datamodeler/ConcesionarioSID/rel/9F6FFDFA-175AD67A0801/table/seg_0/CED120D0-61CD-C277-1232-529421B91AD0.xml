@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CED120D0-61CD-C277-1232-529421B91AD0" name="SedeConcesionario">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>B3044CF6-6CC4-EBCD-643F-DFD1572CEBCD</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_sede" id="B893DC9D-F657-4C29-1DC4-134C90492BC6">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>E2B63B81-C4AD-6754-E717-D66E042E8F37</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA0B48E7-0910-AE8A-9B2E-CA456CD28D86" referredColumn="C9F2AABE-5417-CCC2-6A6E-5B6AB96D36D5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24C00388-B896-EE1C-DEEA-534C60F2A4A9" name="SedeConcesionario_PK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>EAD1E061-5CED-741F-C125-36713C59D4A9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B893DC9D-F657-4C29-1DC4-134C90492BC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65184D75-8486-B033-30B2-555DBEE37C67" name="SedeConcesionario_Sede_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>6018C831-2988-D3B4-E721-120FBA27B429</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B893DC9D-F657-4C29-1DC4-134C90492BC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

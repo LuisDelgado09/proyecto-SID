@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57F74D1A-9467-FAA6-8A9B-1BAC16D46207" name="Sede">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>692F4979-7320-AF9A-7DE5-9990D32C6F6B</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_sede" id="C9F2AABE-5417-CCC2-6A6E-5B6AB96D36D5">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>E2B63B81-C4AD-6754-E717-D66E042E8F37</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_sede" id="6859D550-5D0D-C1AE-63D3-8C4BBA363CB5">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>00EA85F7-8E28-CE40-6D59-20CB1C17258F</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dirección" id="36741892-7A7E-1AE2-605F-1F0985AC98C0">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4BC22DE5-9892-E115-1814-757ECA82C3D5</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ciudad" id="BF89E650-29D9-6353-EEFE-010DA6DDE0B4">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>B9055FD3-3114-CECD-E137-7A720066B792</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="teléfono" id="DE1DC753-0F52-150B-CAB2-43EFD9D25F75">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>5E74D639-7A25-1AAA-87B6-4ACD4D29A7F4</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="37D41C22-0329-02FE-BA97-4DAFC6A1BD28">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>2C8AF97C-6660-E97A-ED23-35E0833ACA4E</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29DFFE84-D238-4B78-1576-CF1B1BE8D3BE" name="Sede_PK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>EAD1E061-5CED-741F-C125-36713C59D4A9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9F2AABE-5417-CCC2-6A6E-5B6AB96D36D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

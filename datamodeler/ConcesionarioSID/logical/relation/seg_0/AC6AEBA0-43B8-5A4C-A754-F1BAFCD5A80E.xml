@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_2" directorySegmentName="seg_0" id="AC6AEBA0-43B8-5A4C-A754-F1BAFCD5A80E">
+<createdBy>luism</createdBy>
+<createdTime>2026-09-11 12:14:04 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<sourcePk>EAD1E061-5CED-741F-C125-36713C59D4A9</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Se realiza en</nameOnSource>
+<nameOnTarget>Registra</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>692F4979-7320-AF9A-7DE5-9990D32C6F6B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BEC4FB78-8E25-D483-5DE8-B9CF38275439</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3923D680-74E7-DA9A-C3D3-16A3B1F6E255" name="Cliente">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>77F0C938-C1D3-F280-890F-FB207FB4ABA7</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_cliente" id="B21319E4-E278-B73C-D3B2-57A9158F9443">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>C802F223-AE4A-1C23-9412-7B77AB369E49</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_documento" id="DA30A9A0-DB6E-BBC9-AFED-0EA60E0D9DB5">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>0D1FD4EC-10C9-D686-6AA7-9B6077D971C5</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_documento" id="15A5EF21-FB1A-4F70-57A0-85177E9EDF93">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>2C4EFD29-5919-6A9A-64E8-D4B0228537AC</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="0F9449BC-B090-3E67-F472-C24091450ADA">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>FF67EC2F-301A-6BE8-89C4-DEA2CB34C972</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dirección" id="6EA99851-4EE6-42B0-B980-384AD532B36C">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>96F5B7C4-BD2F-3D84-A25F-0EFA11C3D717</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="teléfono" id="6D907F9D-AE97-E9DD-A6F0-2F609AF4BCF1">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4F773F13-6655-A0DB-95F9-F36568CEA001</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="F52E0C9B-DC96-F0E7-2CE0-DCD534CD444B">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>420CD788-00D0-E921-64A0-0558028D76DD</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_registro" id="14468A4A-8AC8-30E3-9240-3281A6D4CC0E">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>9C5277CD-D633-24D4-7485-F8DEC5B26970</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD91F950-8A9E-B655-C6AB-E5304660B722" name="Cliente_PK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>52147AFB-7FBA-9E2A-6607-55F3C1A3AA31</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B21319E4-E278-B73C-D3B2-57A9158F9443"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

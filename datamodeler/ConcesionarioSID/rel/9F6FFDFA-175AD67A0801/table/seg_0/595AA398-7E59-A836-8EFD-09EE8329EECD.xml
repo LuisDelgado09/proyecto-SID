@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="595AA398-7E59-A836-8EFD-09EE8329EECD" name="Garantía">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>A0583F9C-D7DA-040B-948A-68A7F093F9BC</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_garantia" id="319B8A94-0856-202D-E105-E0B31965B8E6">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>1BDEB8F0-BB76-3146-70F4-5A889590A070</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_garantia" id="E1F55004-D277-F538-288B-168BF9193B6D">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>7D4208B0-76A2-C4FA-4AF3-F471126D73A7</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="7229A275-E587-E478-BCFC-40E742FE612B">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>306E6F82-858D-6ED0-D3CE-4B7C2DCEC348</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin" id="8FF0FDB5-AC36-6931-0D81-5C7EE05FF4B7">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>7532E5CC-EF0A-7941-939E-703A263CD190</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="condiciones" id="5A03677D-9118-CCC7-4421-5D3C827E3103">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>BEA50721-3823-EC78-42EB-9394F7A171A9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vehículo_ID_vehiculo" id="33B4FBA9-8C29-05A2-E5B1-1C0DA19F7695">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>031A3FDE-6577-736A-8488-F3906B251C25</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACC3DE47-F448-DF30-0566-63E9893F0186" referredColumn="7FD3B1CE-CCB5-6C65-C6E4-8E6099F2E212"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="343EFA6F-E8E9-582A-81EC-00E0FEC11B30" name="Garantía_PK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>29010B88-40C9-BB2B-A8E3-A9C8FC887BB7</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="319B8A94-0856-202D-E105-E0B31965B8E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5BB7475-38D7-64A8-1C98-8CC16E776E97" name="Garantía_Vehículo_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>B5703F40-60B7-1B16-32C9-9DC13C582914</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33B4FBA9-8C29-05A2-E5B1-1C0DA19F7695"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

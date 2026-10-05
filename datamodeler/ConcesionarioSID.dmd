@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ConcesionarioSID" id="D7FA7E6B-43B1-98A6-CC93-B0F10564E00E" version="3.5">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 12:27:54 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D7FA7E6B-43B1-98A6-CC93-B0F10564E00E</designId>
+</OSDM_Design>

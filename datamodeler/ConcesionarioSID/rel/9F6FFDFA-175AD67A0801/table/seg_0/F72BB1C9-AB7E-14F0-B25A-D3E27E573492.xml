@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F72BB1C9-AB7E-14F0-B25A-D3E27E573492" name="Venta">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>BEC4FB78-8E25-D483-5DE8-B9CF38275439</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_venta" id="F8EF6212-546D-23E9-03B2-5D7F421FBF6C">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>6F24B6DB-5C08-0025-29A0-51054A72A3E9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_cliente" id="5E12B99D-C9D8-32DD-83FB-A621DA365453">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>23BBC411-97AC-2616-19FD-331D1E46E6E6</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_vehiculo" id="C917EE27-5B17-6B2F-1545-C104A24623A5">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>62DC57DD-7205-509D-9231-307D03E156FB</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_sede" id="29B3A22E-2E65-DD1E-EA39-E9CB539BB0E8">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>BC2F4AA2-A440-E30F-CF07-D9058E73E1E8</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_venta" id="6B56DDAB-6A3F-3953-343B-233C8DDAA6FF">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>E62EAFB0-3C00-FCAF-FCCE-E6B132FA0CF0</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_venta" id="2F91693A-E07F-C70C-6066-D257BDDB56A7">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>1770C3C8-CCC1-474B-8245-74932C36EAF8</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_pago" id="A03D810B-15BC-9386-C351-28FC25C81E67">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>5F319BEC-4BD0-863C-77DA-3E3B53D04B9D</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_ID_cliente" id="0E009772-6A01-6564-AA3C-819669FFBE5C">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>23C363D0-A2BB-3F22-7C22-D4BCCEB720E0</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0C14D81-1CF6-F9EF-D3FE-1D4B26602F03" referredColumn="B21319E4-E278-B73C-D3B2-57A9158F9443"/>
+</associations>
+</Column>
+<Column name="Sede_ID_sede" id="2E57CC61-A909-C3DB-8EE6-7A3387E334A7">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>89A119FF-C673-AD54-55D7-925995469F65</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3376326-83BB-4FAF-3A02-8ABBC1B504BB" referredColumn="C9F2AABE-5417-CCC2-6A6E-5B6AB96D36D5"/>
+</associations>
+</Column>
+<Column name="Vehículo_ID_vehiculo" id="1DA8D4C1-52D6-5C44-9BDE-8D054088FE4E">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>C82ECFB9-5A82-D888-F08B-6BF13DC6F4C7</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA4A7FD6-8502-0E69-3D33-BA3F356D02A4" referredColumn="7FD3B1CE-CCB5-6C65-C6E4-8E6099F2E212"/>
+</associations>
+</Column>
+<Column name="Tipo_venta_Tipo_venta_ID" id="1C5E8336-205F-148B-D871-6E02A74D2325">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A18C5D72-2848-2C73-1776-3F0F0DE6D151" referredColumn="0CFEBD53-906E-5D88-889E-59BBF0F6E266"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79143F2D-3AE8-A705-8A75-B0756CB54B07" name="Venta_PK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>9A12E739-5F9F-ED4C-4B17-60EFF88088CE</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8EF6212-546D-23E9-03B2-5D7F421FBF6C"/>
+<colUsage columnID="1DA8D4C1-52D6-5C44-9BDE-8D054088FE4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="200D81BD-71EA-09AA-DB98-4593706FA113" name="Venta__IDX">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A2067C8A-6FD6-576D-EF7F-EDFE6FB0166F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1C5E8336-205F-148B-D871-6E02A74D2325"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D10873E2-7E1D-5298-17DA-1370BC92380F" name="Venta_Cliente_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4BC72D4C-6D82-2531-F89F-74D065A69241</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E009772-6A01-6564-AA3C-819669FFBE5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC644ED7-2FC6-46B5-A4C6-0C1205A81A9E" name="Venta_Tipo_venta_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>A2067C8A-6FD6-576D-EF7F-EDFE6FB0166F</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5E8336-205F-148B-D871-6E02A74D2325"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="289FA3D4-5EE6-75FB-FD72-2247E191307B" name="Venta_Vehículo_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4E58AD66-32F5-7E1A-EF21-B57034CA7F04</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DA8D4C1-52D6-5C44-9BDE-8D054088FE4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7589E29B-E5A7-9D7A-AFBA-8F5D1E9058C3" name="Venta_Sede_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>AC6AEBA0-43B8-5A4C-A754-F1BAFCD5A80E</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E57CC61-A909-C3DB-8EE6-7A3387E334A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

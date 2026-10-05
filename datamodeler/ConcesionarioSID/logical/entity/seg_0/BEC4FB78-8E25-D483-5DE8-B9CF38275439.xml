@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BEC4FB78-8E25-D483-5DE8-B9CF38275439" name="Venta">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:05:18 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_venta" id="6F24B6DB-5C08-0025-29A0-51054A72A3E9">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:05:24 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_cliente" id="23BBC411-97AC-2616-19FD-331D1E46E6E6">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:06:07 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_vehiculo" id="62DC57DD-7205-509D-9231-307D03E156FB">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-09-23 13:34:59 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_sede" id="BC2F4AA2-A440-E30F-CF07-D9058E73E1E8">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:07:47 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_venta" id="E62EAFB0-3C00-FCAF-FCCE-E6B132FA0CF0">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:08:08 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio_venta" id="1770C3C8-CCC1-474B-8245-74932C36EAF8">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:08:42 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_pago" id="5F319BEC-4BD0-863C-77DA-3E3B53D04B9D">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:08:57 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_cliente1" id="23C363D0-A2BB-3F22-7C22-D4BCCEB720E0">
+<createdBy>luism</createdBy>
+<createdTime>2026-09-11 12:13:13 UTC</createdTime>
+<generatorID>4BC72D4C-6D82-2531-F89F-74D065A69241</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>C802F223-AE4A-1C23-9412-7B77AB369E49</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_sede1" id="89A119FF-C673-AD54-55D7-925995469F65">
+<createdBy>luism</createdBy>
+<createdTime>2026-09-11 12:14:04 UTC</createdTime>
+<generatorID>AC6AEBA0-43B8-5A4C-A754-F1BAFCD5A80E</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>E2B63B81-C4AD-6754-E717-D66E042E8F37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_vehiculo1" id="C82ECFB9-5A82-D888-F08B-6BF13DC6F4C7">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-09-23 13:37:42 UTC</createdTime>
+<generatorID>4E58AD66-32F5-7E1A-EF21-B57034CA7F04</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>C35ECD66-4B23-3AB2-ECDB-D41C02711A27</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A12E739-5F9F-ED4C-4B17-60EFF88088CE" name="Venta PK">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:06:03 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F24B6DB-5C08-0025-29A0-51054A72A3E9</attributeRef>
+<attributeRef>C82ECFB9-5A82-D888-F08B-6BF13DC6F4C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

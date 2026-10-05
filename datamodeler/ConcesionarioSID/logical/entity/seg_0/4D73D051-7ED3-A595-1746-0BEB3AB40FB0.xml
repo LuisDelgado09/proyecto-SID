@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D73D051-7ED3-A595-1746-0BEB3AB40FB0" name="Orden de Servicio">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:10:25 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_orden" id="D9942478-1677-AA88-2D19-F757EDAF22CD">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:12:48 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_vehiculo" id="D50794AB-8CEE-C938-CBBF-86A6E88DA192">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:13:14 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_sede" id="C5AC79C8-B315-11F8-329E-E6E7C4B1E191">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:13:30 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="4FEE2581-6833-01A6-CC4D-F735FDD55099">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:14:39 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_salida" id="40EEDAB4-FC76-B046-E4D6-841681359797">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:15:13 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kilometraje_ingreso" id="AC69266C-E08F-C26B-C75B-A56C25851622">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:15:34 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_servicio" id="4DA5DA9C-D117-00ED-C1D1-9D070C300FD9">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:16:05 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="diagnostico" id="DE070E12-398F-C32A-574B-69B55191A0C2">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:16:25 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo_total" id="DF70E2CF-DC71-529C-9064-518EF7B3A6D6">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:16:46 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_vehiculo1" id="ACAA25DF-08E4-312E-2513-692226FD7970">
+<createdBy>luism</createdBy>
+<createdTime>2026-09-11 12:15:00 UTC</createdTime>
+<generatorID>4E21B36D-E222-7FB7-A921-3CE11AB0471C</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>C35ECD66-4B23-3AB2-ECDB-D41C02711A27</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_sede1" id="B8F1DEBF-DAB8-91DC-7952-9DAC7EEAA698">
+<createdBy>luism</createdBy>
+<createdTime>2026-09-11 12:17:33 UTC</createdTime>
+<generatorID>398604E4-B0DA-B626-69BB-3C55714D75FA</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>E2B63B81-C4AD-6754-E717-D66E042E8F37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_cliente" id="AC034F87-3496-28C7-A17E-BF7FBAAE1826">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:54:26 UTC</createdTime>
+<generatorID>6FCE02D7-E1D3-4244-0749-6F75D844E393</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>C802F223-AE4A-1C23-9412-7B77AB369E49</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_seguro" id="73962157-CC81-9C6B-4FC9-00A3116A1BF1">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:54:33 UTC</createdTime>
+<generatorID>C2FA7670-2D8A-1290-18D1-7CEE2CADEF4C</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<referedAttribute>F66ECB18-7CCC-A8C7-17BF-C7B20955578E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B11D1CC-7D1F-BC3B-39D2-8FBE7867D4EB" name="Orden de Servicio PK">
+<createdBy>1105370563</createdBy>
+<createdTime>2026-08-28 13:13:12 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D9942478-1677-AA88-2D19-F757EDAF22CD</attributeRef>
+<attributeRef>AC034F87-3496-28C7-A17E-BF7FBAAE1826</attributeRef>
+<attributeRef>73962157-CC81-9C6B-4FC9-00A3116A1BF1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

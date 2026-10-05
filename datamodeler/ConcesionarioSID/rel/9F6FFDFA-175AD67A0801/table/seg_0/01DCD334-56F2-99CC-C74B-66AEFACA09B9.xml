@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="01DCD334-56F2-99CC-C74B-66AEFACA09B9" name="Orden_de_Servicio">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4D73D051-7ED3-A595-1746-0BEB3AB40FB0</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_orden" id="CAF1BB48-470E-D515-D833-80AF12C9294A">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>D9942478-1677-AA88-2D19-F757EDAF22CD</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_vehiculo" id="DCFE0C2F-EB71-C2D2-8863-90746106D97F">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>D50794AB-8CEE-C938-CBBF-86A6E88DA192</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_sede" id="D2E6E310-6F5B-21B4-BBC9-2F1F0F07B8C8">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>C5AC79C8-B315-11F8-329E-E6E7C4B1E191</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="9FE42880-473C-E51F-E27E-331E5839AD82">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4FEE2581-6833-01A6-CC4D-F735FDD55099</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_salida" id="29240AC8-1E10-3A33-1595-99C937D7682D">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>40EEDAB4-FC76-B046-E4D6-841681359797</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kilometraje_ingreso" id="43FA290D-CE66-FE86-CEAA-9061CC092C8C">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>AC69266C-E08F-C26B-C75B-A56C25851622</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_servicio" id="96CDCB8C-FEFE-BBD9-AA93-39B47F5194CD">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4DA5DA9C-D117-00ED-C1D1-9D070C300FD9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diagnostico" id="B37FCA47-0CC7-4776-AB73-D8765DCABC39">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>DE070E12-398F-C32A-574B-69B55191A0C2</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costo_total" id="C3221FA7-D04B-76D1-C315-5D2EF1E66B1B">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>DF70E2CF-DC71-529C-9064-518EF7B3A6D6</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vehículo_ID_vehiculo" id="E1015B82-8530-98F0-677D-134630F16C9D">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>ACAA25DF-08E4-312E-2513-692226FD7970</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0E27A0E-AA29-B64B-0280-30F6C5AB4FC7" referredColumn="7FD3B1CE-CCB5-6C65-C6E4-8E6099F2E212"/>
+</associations>
+</Column>
+<Column name="Sede_ID_sede" id="ED15C537-855A-4F9D-4B12-3AC1A9CCFC00">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>B8F1DEBF-DAB8-91DC-7952-9DAC7EEAA698</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78A455AE-32B7-40B2-B6AD-52C9FF672D6B" referredColumn="C9F2AABE-5417-CCC2-6A6E-5B6AB96D36D5"/>
+</associations>
+</Column>
+<Column name="Cliente_ID_cliente" id="82FEA594-E627-942B-223F-AEC808070F77">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>AC034F87-3496-28C7-A17E-BF7FBAAE1826</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C2E17C6-6D5B-077A-30FF-BF70E4A33D8F" referredColumn="B21319E4-E278-B73C-D3B2-57A9158F9443"/>
+</associations>
+</Column>
+<Column name="Seguro_ID_seguro" id="C21A8434-A6E5-E51A-1B60-F48DB30C603A">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>73962157-CC81-9C6B-4FC9-00A3116A1BF1</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1ADE511F-8390-BA9A-6F3E-9006ACFC5EC5" referredColumn="8F3AC39A-6322-B881-7640-66B542830839"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94ADD056-8735-F72A-C1D9-30483B9429E7" name="Orden_de_Servicio_PK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>1B11D1CC-7D1F-BC3B-39D2-8FBE7867D4EB</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAF1BB48-470E-D515-D833-80AF12C9294A"/>
+<colUsage columnID="82FEA594-E627-942B-223F-AEC808070F77"/>
+<colUsage columnID="C21A8434-A6E5-E51A-1B60-F48DB30C603A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AF39E68-257B-FBBA-688F-01B7BBEBF17B" name="Orden_de_Servicio_Cliente_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>6FCE02D7-E1D3-4244-0749-6F75D844E393</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82FEA594-E627-942B-223F-AEC808070F77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FCF5D9C-6E7E-759F-D353-54E3D12F2D27" name="Orden_de_Servicio_Seguro_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>C2FA7670-2D8A-1290-18D1-7CEE2CADEF4C</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C21A8434-A6E5-E51A-1B60-F48DB30C603A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFA2CC08-B148-F3FB-F257-1C1B18F915B3" name="Orden_de_Servicio_Vehículo_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>4E21B36D-E222-7FB7-A921-3CE11AB0471C</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1015B82-8530-98F0-677D-134630F16C9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1C02C9A-DEE4-4EAA-E66B-88280ACE3C53" name="Orden_de_Servicio_Sede_FK">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:58:40 UTC</createdTime>
+<generatorID>398604E4-B0DA-B626-69BB-3C55714D75FA</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED15C537-855A-4F9D-4B12-3AC1A9CCFC00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

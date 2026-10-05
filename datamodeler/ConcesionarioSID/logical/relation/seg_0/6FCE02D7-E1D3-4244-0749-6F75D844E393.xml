@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_14" directorySegmentName="seg_0" id="6FCE02D7-E1D3-4244-0749-6F75D844E393">
+<createdBy>mabo0</createdBy>
+<createdTime>2026-10-02 12:54:26 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="9F6FFDFA-229E-99C2-D6C7-175AD67A0801" value="true"/>
+</engineerTo>
+<sourcePk>52147AFB-7FBA-9E2A-6607-55F3C1A3AA31</sourcePk>
+<arc>0AD900A7-FFCE-E2EF-0FDA-B205C2024CF9</arc>
+<identifying>true</identifying>
+<nameOnSource>paga</nameOnSource>
+<nameOnTarget>es pagada por</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>77F0C938-C1D3-F280-890F-FB207FB4ABA7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4D73D051-7ED3-A595-1746-0BEB3AB40FB0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
