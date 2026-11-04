@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="branches" directorySegmentName="seg_0" id="385E650C-D094-EFD3-64FD-BCC3BDAC6AF5">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="name" id="3FD531C5-938B-E118-37A6-7CA60A19C87D">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="branch_type" id="8FE03376-052C-9CB8-969E-34B0AC64ACCA">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="city" id="94E083A3-2A78-8445-972E-D2F13F5CA164">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="address" id="99BC375F-52B0-39E5-55B3-D0472213486F">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="branch_id" id="C4B35DB6-E644-47D3-B988-59D846218F00">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="phone" id="E38F8224-5C72-1A11-C5C3-8A388257573A">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="pk_branches" id="FF3DAEE6-6F9D-E55B-025B-3320F26AA7B3">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="chk_branch_type" id="369BB8CF-9EF7-6CC7-A477-5AC133C5932B">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

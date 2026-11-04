@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FEC5DD84-B3CF-3638-D63E-FF856F40BCCA" name="insurances">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="insurance_id" id="F37BD3D3-3AE3-FEC1-A2FD-F8BC14C39E90">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2F2DDFE0-7D1A-E55F-101A-87A9A17CC4FE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="insurance_company" id="40148BD7-3710-79FA-80F0-077E2150AEC2">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EB384A7B-9CEC-69F4-839C-066E1440E4FC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="policy_number" id="566EA5A0-B030-46D7-DFE6-2228F6C6DA2D">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D03D0C3E-1A74-9A76-9840-19E01AB5FE59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="DCE5001E-FADD-0CB6-3D72-4D3DB819B53E">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>03C0ABC3-A43E-2AD2-AA24-35D9E360B472</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="8D5CB6C1-3B07-EC4A-A436-CF95CB4CC376">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>03C0ABC3-A43E-2AD2-AA24-35D9E360B472</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_id" id="0C444C67-AB5A-56EA-8993-9E703B39C3F1">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>7A3AB2AE-A6E0-5A8A-F8DC-A1A0848E9D03</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87D2FD0F-1EC1-DA99-9481-7AD6EC49A5EB" referredColumn="F52DE17C-E099-F61E-7EEB-3F41ED9CD9FF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2E9ECD8-5FD6-4A89-87B9-1ED0E4EC4CBB" name="pk_insurances">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F37BD3D3-3AE3-FEC1-A2FD-F8BC14C39E90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92F6FC5B-0253-D4DD-0A07-6A2677063F0C" name="uq_insurance_policy">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="566EA5A0-B030-46D7-DFE6-2228F6C6DA2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5752CB42-2FDA-9B8F-DC71-83C155296101" name="idx_insurances_veh">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C444C67-AB5A-56EA-8993-9E703B39C3F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71123790-ACB0-98BA-38CF-14A5C95975FE" name="fk_insurances_vehicle">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C444C67-AB5A-56EA-8993-9E703B39C3F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="chk_insurance_dates" directorySegmentName="seg_0" id="BD270790-26F9-28F5-B5A0-CFF4DF4E3EF4">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<rule><![CDATA[end_date >= start_date]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="honda_motors_ddl_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="03C0ABC3-A43E-2AD2-AA24-35D9E360B472">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30" id="0A5B0D0B-1F71-8B82-E7EF-74B07B00E162">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_17" id="103EF023-1648-AC8B-696C-9841CFC2D29C">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>17</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0v1" id="145CAA5E-51D1-B4F8-902A-C85ACB14DC46">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="201D136B-43AE-9FC5-8DBE-2B9FB2988EF6">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="2F2DDFE0-7D1A-E55F-101A-87A9A17CC4FE">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150v1" id="30CF7614-6359-4306-987C-DB6D6AF9E1EA">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>150</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CLOB_0_0_0v1" id="348BDE27-B372-B299-2452-1A56D98AC761">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CLOB_0_0_0" id="3BE4FCFA-DC40-C6B4-53D8-DCE79E6053F2">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150" id="40EAFA9A-037B-4389-455C-FA96C396E348">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>150</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20v1" id="4891F3C6-59B2-E901-1108-405ADC7A86E6">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_120v1" id="48D3456A-BAFB-4A8D-915A-EA312BA25327">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>120</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30v1" id="6CFD8AA9-281F-EC97-8072-2F410CF73730">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10v1" id="70493491-FB62-EFE6-AD29-744E2A3CD560">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_60" id="743A1C09-AEB4-2E98-80CE-71A3E1F395B1">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="7A3AB2AE-A6E0-5A8A-F8DC-A1A0848E9D03">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_2_0" id="91FF781E-4B3F-5F0A-23D9-ECFC092D1414">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_60v1" id="AA7BDE7B-31AC-29A5-18C1-460A1FC23B88">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>60</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_2_0v1" id="C83A7276-17E6-2C6F-2D0B-2EE9AE750102">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50v1" id="C8DBA5F0-0F73-F6EA-3C09-62076CF39873">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100v1" id="CE7F9024-1792-06D4-F06C-D28689CBFF4B">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="D03D0C3E-1A74-9A76-9840-19E01AB5FE59">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_120" id="D5305ECE-83D0-F597-621D-1B3DD96BEEE3">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>120</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="EB384A7B-9CEC-69F4-839C-066E1440E4FC">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:31:00 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_17v1" id="F1DA1715-F289-B9B1-F5B5-057354A1BE7B">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>17</dataTypeSize>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0v1" id="F7D9579B-F48D-E470-FDDF-81B1A988525E">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>honda_motors_ddl_Domains</fileName>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

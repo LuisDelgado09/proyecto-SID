@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_mixed_branch" directorySegmentName="seg_0" id="E5EDDC1A-4079-1F09-EC20-AD5CDDC55BC8">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>8CA45DF4-CDE6-D707-A05B-5E5E0C3B4EE6</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<sourcePk>54FCB5DE-3208-893F-8802-16CAA4C1883A</sourcePk>
+<arc>F70859CA-8D34-7B2F-6EAA-8CC7AF0D9A49</arc>
+<dominantRole>5B99F179-65B0-361B-E90D-BC631DF3625D</dominantRole>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5B99F179-65B0-361B-E90D-BC631DF3625D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C6B6DE09-1642-AFBA-C596-03927A479896</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

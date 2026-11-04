@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="72E0B05D-D874-F5B1-2102-2970453944AC" name="vehicles">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>35CC795C-4E44-F40E-8107-114341117271</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="vehicle id" id="E2A2748A-8846-E848-C184-178D5B0E4717">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>F52DE17C-E099-F61E-7EEB-3F41ED9CD9FF</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>7A3AB2AE-A6E0-5A8A-F8DC-A1A0848E9D03</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vin" id="7EEED2E6-D4CD-8C86-E8A0-8ED4A428B635">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>EE64EF9B-C0A5-EB90-E03F-79185F79BFD5</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>103EF023-1648-AC8B-696C-9841CFC2D29C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="license plate" id="2187B4FA-2959-425B-8C9D-4F78AADED874">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>FD6A69D7-0FB8-255C-D981-3FA20962692C</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>201D136B-43AE-9FC5-8DBE-2B9FB2988EF6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="brand" id="08D80A06-0C65-1124-3FEF-10F15D4EDA2C">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>4F3CE874-2830-8343-CA4E-83706BCBD0DA</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D03D0C3E-1A74-9A76-9840-19E01AB5FE59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model" id="947E6815-60E0-5DB7-5934-DC7029CD955A">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>345072F7-F1FD-532E-A903-6488551921D9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D03D0C3E-1A74-9A76-9840-19E01AB5FE59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="color" id="A4FC5AD7-F7EE-8BF9-898F-8B6526FCEF55">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>E16AE065-5EB9-94E9-939E-745DC7ED64B4</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0A5B0D0B-1F71-8B82-E7EF-74B07B00E162</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vehicle type" id="AF5F1A79-E009-122F-91F4-50B5F3923BE8">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>BBF78A63-FDD7-3EF8-00F7-2F0B0EF13188</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0A5B0D0B-1F71-8B82-E7EF-74B07B00E162</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mileage" id="0574F3D2-D4AE-F294-694B-0BC66C9F4180">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>6293EC4A-9E63-BD2C-60EB-F48D4679F4A9</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>7A3AB2AE-A6E0-5A8A-F8DC-A1A0848E9D03</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="417C2B03-B0F7-D77A-2C6F-58B240196DD4" name="pk vehicles">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>89E2B9F8-AA51-5291-574C-4B17F16B8B67</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E2A2748A-8846-E848-C184-178D5B0E4717</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FCFF8CE1-6F16-6371-DC48-3AFFC893987B" name="uq vehicle vin">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>480390D7-8932-AEDB-7F1F-FEDF4E3798B3</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>7EEED2E6-D4CD-8C86-E8A0-8ED4A428B635</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D0ABDD38-BBBA-EF83-ED35-9131FCFAF6B2" name="uq vehicle plate">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>1CD6530E-62F9-F28D-5A43-53D43D8B114F</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>2187B4FA-2959-425B-8C9D-4F78AADED874</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

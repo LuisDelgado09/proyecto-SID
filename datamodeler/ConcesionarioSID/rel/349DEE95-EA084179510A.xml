@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="concesionario_sid" id="349DEE95-82C8-BF39-9852-EA084179510A" mainViewID="AA506F6A-CD2E-4069-C9A4-3915A0326162">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>honda_motors_ddl_v2.sql</fileName>
+<pathName>C:\Users\luism\Downloads</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

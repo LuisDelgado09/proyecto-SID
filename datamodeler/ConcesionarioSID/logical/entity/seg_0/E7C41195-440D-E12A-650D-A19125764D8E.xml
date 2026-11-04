@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7C41195-440D-E12A-650D-A19125764D8E" name="sale types">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>DD69774A-95DF-7FF2-0B4A-DE83419544A7</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sale type id" id="C301CDB9-A1AD-D562-5E2D-A2D41C8CA1A3">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>052EFB2F-97DF-6FD7-20F9-005DE1F53789</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>7A3AB2AE-A6E0-5A8A-F8DC-A1A0848E9D03</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="D3E24A92-CAAD-3C7E-0FCB-B132C73729D8">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>AB50AD6C-0CDB-488C-269F-3A83A7BF7D59</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D03D0C3E-1A74-9A76-9840-19E01AB5FE59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FEB0AD99-849D-57DB-0C29-18CCF039489D" name="pk sale types">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>ADA4E0E1-F155-D701-5D0A-13122C07E97F</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C301CDB9-A1AD-D562-5E2D-A2D41C8CA1A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83D8D59A-040F-88B9-2237-EDBA7E7E89EA" containerWithKeyObject="D39149C4-25F4-CB13-1900-AE5B252724A2" localFKIndex="7A256163-FBCC-A837-E5CB-FDE2E5922725" name="fk_sales_branch">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<referredTableLongName>branches</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>385E650C-D094-EFD3-64FD-BCC3BDAC6AF5</referredTableID>
+<keyObject>FF3DAEE6-6F9D-E55B-025B-3320F26AA7B3</keyObject>
+<referredKeyID>FF3DAEE6-6F9D-E55B-025B-3320F26AA7B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>branch_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

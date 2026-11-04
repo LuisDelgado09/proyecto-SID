@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_orders_vehicle" directorySegmentName="seg_0" id="5631C509-873B-A553-01EB-DED4E9C43E54">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>2EAC9086-4465-1DF4-434D-D1E692BC2CFC</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<sourcePk>417C2B03-B0F7-D77A-2C6F-58B240196DD4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>72E0B05D-D874-F5B1-2102-2970453944AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7AE7E558-A380-D728-0D35-7EFD44244D99</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

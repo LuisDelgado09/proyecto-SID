@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="F70859CA-8D34-7B2F-6EAA-8CC7AF0D9A49" name="FKArc_1">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="860B0F20-3E3C-184C-51FE-1A0AF86BCF3E" value="true"/>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<entity>5B99F179-65B0-361B-E90D-BC631DF3625D</entity>
+<relations>
+<relationID>E5EDDC1A-4079-1F09-EC20-AD5CDDC55BC8</relationID>
+<relationID>074B0092-F31D-6B91-7A9D-2E471EC572EC</relationID>
+<relationID>A73FD4AE-04B0-8982-12E6-7EB569DC0245</relationID>
+</relations>
+</Arc>

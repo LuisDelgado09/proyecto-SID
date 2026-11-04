@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_warranties_vehicle" directorySegmentName="seg_0" id="6B8FB9A9-8DA1-6210-3CF5-7C00822C7EF0">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>8E2CC3EE-0508-5820-69E9-EBE61E7E86F8</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<sourcePk>417C2B03-B0F7-D77A-2C6F-58B240196DD4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>72E0B05D-D874-F5B1-2102-2970453944AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3F0F9565-FEC2-4259-474D-1FDC4CC5E2E1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

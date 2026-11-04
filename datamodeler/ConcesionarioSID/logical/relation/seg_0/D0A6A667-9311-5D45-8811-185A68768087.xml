@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_sales_branch" directorySegmentName="seg_0" id="D0A6A667-9311-5D45-8811-185A68768087">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>83D8D59A-040F-88B9-2237-EDBA7E7E89EA</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<sourcePk>54FCB5DE-3208-893F-8802-16CAA4C1883A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5B99F179-65B0-361B-E90D-BC631DF3625D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>010C4C0A-1FC1-D0FD-5605-2D88FEC4CC3E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

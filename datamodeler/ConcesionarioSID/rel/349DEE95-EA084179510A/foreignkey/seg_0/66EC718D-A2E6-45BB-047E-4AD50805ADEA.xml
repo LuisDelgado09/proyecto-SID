@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="66EC718D-A2E6-45BB-047E-4AD50805ADEA" containerWithKeyObject="10524073-AD77-CA5F-1ADD-FA1A910E7762" localFKIndex="DC7B5B80-B832-5B56-755D-4E46698C13A6" name="fk_orders_insurance">
+<sourceDDLFile>honda_motors_ddl_v2.sql</sourceDDLFile>
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:33:33 UTC</createdTime>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<referredTableLongName>insurances</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FEC5DD84-B3CF-3638-D63E-FF856F40BCCA</referredTableID>
+<keyObject>F2E9ECD8-5FD6-4A89-87B9-1ED0E4EC4CBB</keyObject>
+<referredKeyID>F2E9ECD8-5FD6-4A89-87B9-1ED0E4EC4CBB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>insurance_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

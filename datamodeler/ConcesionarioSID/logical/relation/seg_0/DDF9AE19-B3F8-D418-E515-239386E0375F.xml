@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_orders_insurance" directorySegmentName="seg_0" id="DDF9AE19-B3F8-D418-E515-239386E0375F">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>66EC718D-A2E6-45BB-047E-4AD50805ADEA</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<sourcePk>77206911-EEC3-C364-2027-DE097B3BAFA0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FF108962-2A84-0F1B-4AF7-97BD130EA043</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7AE7E558-A380-D728-0D35-7EFD44244D99</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

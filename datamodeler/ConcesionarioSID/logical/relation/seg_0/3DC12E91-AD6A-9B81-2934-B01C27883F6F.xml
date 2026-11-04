@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_insurances_vehicle" directorySegmentName="seg_0" id="3DC12E91-AD6A-9B81-2934-B01C27883F6F">
+<createdBy>luism</createdBy>
+<createdTime>2026-11-04 23:45:11 UTC</createdTime>
+<generatorID>87D2FD0F-1EC1-DA99-9481-7AD6EC49A5EB</generatorID>
+<ownerDesignName>ConcesionarioSID</ownerDesignName>
+<engineerTo>
+<item key="349DEE95-82C8-BF39-9852-EA084179510A" value="true"/>
+</engineerTo>
+<sourcePk>417C2B03-B0F7-D77A-2C6F-58B240196DD4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>72E0B05D-D874-F5B1-2102-2970453944AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FF108962-2A84-0F1B-4AF7-97BD130EA043</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
