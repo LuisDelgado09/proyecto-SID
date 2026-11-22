@@ -2,15 +2,21 @@
 -- SCRIPT DDL - SISTEMA DE CONCESIONARIA
 -- Motor: Oracle Database. Ejecutar una sola vez en un esquema vacio.
 -- Crea catalogos, entidades, relaciones, restricciones, indices y auditoria.
+-- GUIA: en SQL Developer, conectese al esquema de trabajo y ejecute el archivo
+-- completo con Run Script (F5). No lo ejecute sobre un esquema que ya tenga
+-- estos objetos: no contiene DROP y Oracle avisara que los objetos existen.
+-- Al terminar, continúe con 02_dml.sql; este archivo no carga datos de prueba.
 -- ==============================================================================
 
--- 1. SECUENCIAS para generar identificadores numericos.
+-- 1. SECUENCIAS: asignan consecutivos a tipos de venta, vehiculos, ventas y
+-- auditoria. En una instalacion nueva, los datos de prueba empezaran en 1.
 CREATE SEQUENCE seq_sale_types START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_vehicles START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_sales START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_sales_audit START WITH 1 INCREMENT BY 1;
 
--- 2. CLIENTES: personas naturales o juridicas que compran o solicitan servicios.
+-- 2. TABLAS BASE: primero se crean las entidades sin FK a otras tablas.
+-- CLIENTES: personas naturales o juridicas que compran o solicitan servicios.
 CREATE TABLE customers (
     customer_id      VARCHAR2(20) NOT NULL,
     document_type    VARCHAR2(10) NOT NULL, -- Ej: 'CC', 'NIT', 'CE'
@@ -43,7 +49,8 @@ CREATE TABLE branches (
     CONSTRAINT chk_branch_type CHECK (branch_type IN ('MIXED', 'DEALERSHIP', 'WORKSHOP'))
 );
 
--- 3. SUBTIPOS de sucursal. Cada fila debe corresponder a una sucursal existente.
+-- 3. SUBTIPOS de sucursal: cada PK tambien es FK a branches. Esto evita crear
+-- un subtipo sin su sucursal padre; branch_type registra la categoria general.
 CREATE TABLE mixed_branches (
     branch_id        VARCHAR2(10) NOT NULL,
     CONSTRAINT pk_mixed_branches PRIMARY KEY (branch_id),
@@ -62,7 +69,8 @@ CREATE TABLE workshop_branches (
     CONSTRAINT fk_workshop_branch FOREIGN KEY (branch_id) REFERENCES branches(branch_id)
 );
 
--- 4. VEHICULOS: inventario identificado por VIN y placa.
+-- 4. TABLAS OPERATIVAS: se crean despues de sus padres para poder declarar FKs.
+-- VEHICULOS: inventario identificado por VIN y placa.
 CREATE TABLE vehicles (
     vehicle_id       INTEGER NOT NULL,
     vin              VARCHAR2(17) NOT NULL,
@@ -167,7 +175,8 @@ CREATE INDEX idx_orders_vehicle ON service_orders(vehicle_id);
 CREATE INDEX idx_orders_branch ON service_orders(branch_id);
 CREATE INDEX idx_orders_insurance ON service_orders(insurance_id);
 
--- Diccionario de datos: finalidad funcional de cada tabla principal.
+-- 5. DICCIONARIO DE DATOS: estos comentarios se pueden consultar desde las
+-- propiedades de tablas/columnas en SQL Developer o en USER_TAB_COMMENTS.
 COMMENT ON TABLE customers IS 'Clientes naturales o juridicos de la concesionaria.';
 COMMENT ON TABLE sale_types IS 'Catalogo de modalidades de venta.';
 COMMENT ON TABLE branches IS 'Sucursales y tipo de operacion.';

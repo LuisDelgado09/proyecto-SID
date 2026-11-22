@@ -2,14 +2,21 @@
 -- SCRIPT DML - INSERCIONES DE PRUEBA
 -- Ejecutar despues de 01_ddl.sql y una sola vez en el esquema recien creado.
 -- Carga datos sinteticos para los reportes de ventas, servicios y garantias.
+-- GUIA: ejecutar el archivo completo con Run Script (F5). Respete el orden:
+-- catalogos/sucursales/clientes/vehiculos, luego polizas/garantias, y al final
+-- ventas/ordenes. Las FK dependen de que los registros padres ya existan.
+-- Si una insercion falla, no vuelva a ejecutar todo a ciegas: revise si se
+-- alcanzo el COMMIT final. Si no, haga ROLLBACK; si ya se confirmo, limpie o
+-- restaure los datos antes de volver a cargar para evitar duplicados.
 -- ==============================================================================
 
--- 1. TIPOS DE VENTA
+-- 1. TIPOS DE VENTA: la secuencia crea los IDs 1, 2 y 3 usados por sales.
 INSERT INTO sale_types (sale_type_id, description) VALUES (seq_sale_types.NEXTVAL, 'Venta Vehículo Nuevo');
 INSERT INTO sale_types (sale_type_id, description) VALUES (seq_sale_types.NEXTVAL, 'Venta Vehículo Usado');
 INSERT INTO sale_types (sale_type_id, description) VALUES (seq_sale_types.NEXTVAL, 'Venta Flota Corporativa');
 
--- 2. SUCURSALES Y SUS SUBTIPOS
+-- 2. SUCURSALES Y SUBTIPOS: cada sucursal se inserta primero en branches y
+-- despues en exactamente una tabla hija segun su branch_type.
 -- Sucursal Mixta
 INSERT INTO branches (branch_id, name, address, city, phone, branch_type)
 VALUES ('BR-001', 'Sede Principal Cali', 'Av Pasoancho #80-20', 'Cali', '3100000001', 'MIXED');
@@ -28,7 +35,8 @@ INSERT INTO branches (branch_id, name, address, city, phone, branch_type)
 VALUES ('BR-004', 'Taller Especializado Sur', 'Cra 100 #11-12', 'Cali', '3100000004', 'WORKSHOP');
 INSERT INTO workshop_branches (branch_id) VALUES ('BR-004');
 
--- 3. CLIENTES (10 registros)
+-- 3. CLIENTES (10 registros): los IDs se referencian mas adelante en ventas y
+-- ordenes. Los INSERT sin lista de columnas siguen exactamente el orden del DDL.
 INSERT INTO customers (customer_id, document_type, document_number, full_name, address, phone, email, registration_date)
 VALUES ('C-1001', 'CC', '1100220033', 'Carlos Restrepo', 'Cra 50 # 10-20', '3151112233', 'carlos.r@email.com', TO_DATE('2025-01-15', 'YYYY-MM-DD'));
 INSERT INTO customers VALUES ('C-1002', 'CC', '1144556677', 'Ana Maria Valencia', 'Cll 5 # 30-40', '3162223344', 'ana.v@email.com', TO_DATE('2025-03-20', 'YYYY-MM-DD'));
@@ -41,7 +49,8 @@ INSERT INTO customers VALUES ('C-1008', 'CC', '1155443322', 'Laura Osorio', 'Cll
 INSERT INTO customers VALUES ('C-1009', 'NIT', '901234567-8', 'Transportes del Valle', 'Yumbo', '3209990011', 'gerencia@tvalle.com', TO_DATE('2026-02-28', 'YYYY-MM-DD'));
 INSERT INTO customers VALUES ('C-1010', 'CC', '1133557799', 'Mauricio Cardenas', 'Ciudad Jardín', '3210001122', 'mauricio.c@email.com', TO_DATE('2026-04-15', 'YYYY-MM-DD'));
 
--- 4. VEHÍCULOS (12 registros - Diferentes tipos para Reporte 1)
+-- 4. VEHICULOS (12 registros): seq_vehicles asigna IDs del 1 al 12 en este
+-- esquema nuevo; seguros, garantias, ventas y ordenes usan esos IDs.
 INSERT INTO vehicles VALUES (seq_vehicles.NEXTVAL, 'VIN11111111111111', 'AAA-111', 'Toyota', 'Corolla', 'Blanco', 'Sedan', 15000);
 INSERT INTO vehicles VALUES (seq_vehicles.NEXTVAL, 'VIN22222222222222', 'BBB-222', 'Ford', 'Explorer', 'Negro', 'SUV', 0); -- Nuevo
 INSERT INTO vehicles VALUES (seq_vehicles.NEXTVAL, 'VIN33333333333333', 'CCC-333', 'Mazda', 'CX-5', 'Rojo', 'SUV', 35000);
@@ -55,7 +64,8 @@ INSERT INTO vehicles VALUES (seq_vehicles.NEXTVAL, 'VIN00000000000000', 'JJJ-000
 INSERT INTO vehicles VALUES (seq_vehicles.NEXTVAL, 'VINA1A1A1A1A1A1A1', 'KKK-123', 'Mazda', '3', 'Rojo', 'Sedan', 25000);
 INSERT INTO vehicles VALUES (seq_vehicles.NEXTVAL, 'VINB2B2B2B2B2B2B2', 'LLL-456', 'Suzuki', 'Swift', 'Blanco', 'Hatchback', 0); -- Nuevo
 
--- 5. SEGUROS (8 registros - Para cruce en Reporte 2)
+-- 5. SEGUROS (8 registros): varias ordenes los usaran; otras quedaran sin poliza
+-- para demostrar el LEFT JOIN del Reporte 2.
 INSERT INTO insurances VALUES ('INS-001', 'SURA', 'POL-100200', TO_DATE('2026-01-01','YYYY-MM-DD'), TO_DATE('2026-12-31','YYYY-MM-DD'), 1);
 INSERT INTO insurances VALUES ('INS-002', 'Allianz', 'POL-300400', TO_DATE('2026-03-15','YYYY-MM-DD'), TO_DATE('2027-03-14','YYYY-MM-DD'), 2);
 INSERT INTO insurances VALUES ('INS-003', 'Mapfre', 'POL-500600', TO_DATE('2025-06-01','YYYY-MM-DD'), TO_DATE('2026-05-31','YYYY-MM-DD'), 3);
@@ -65,7 +75,8 @@ INSERT INTO insurances VALUES ('INS-006', 'Allianz', 'POL-200300', TO_DATE('2026
 INSERT INTO insurances VALUES ('INS-007', 'Mapfre', 'POL-400500', TO_DATE('2026-07-25','YYYY-MM-DD'), TO_DATE('2027-07-24','YYYY-MM-DD'), 9);
 INSERT INTO insurances VALUES ('INS-008', 'Bolivar', 'POL-600700', TO_DATE('2026-10-15','YYYY-MM-DD'), TO_DATE('2027-10-14','YYYY-MM-DD'), 11);
 
--- 6. GARANTÍAS (10 registros - Algunas vigentes, otras vencidas para Reporte 3)
+-- 6. GARANTIAS (10 registros): incluye fechas vencidas y vigentes para mostrar
+-- ambos estados en el Reporte 3. El estado se calcula al ejecutar la consulta.
 INSERT INTO warranties VALUES ('WAR-001', 'Garantía Extendida', TO_DATE('2025-01-10','YYYY-MM-DD'), TO_DATE('2027-01-09','YYYY-MM-DD'), 'Cobertura motor y transmisión', 1);
 INSERT INTO warranties VALUES ('WAR-002', 'Garantía Fábrica', TO_DATE('2026-02-15','YYYY-MM-DD'), TO_DATE('2029-02-14','YYYY-MM-DD'), 'Cobertura total 3 años', 2);
 INSERT INTO warranties VALUES ('WAR-003', 'Garantía Básica Usado', TO_DATE('2024-05-20','YYYY-MM-DD'), TO_DATE('2025-05-19','YYYY-MM-DD'), 'VENCIDA - Solo caja', 3);
@@ -77,7 +88,8 @@ INSERT INTO warranties VALUES ('WAR-008', 'Garantía Fábrica', TO_DATE('2026-09
 INSERT INTO warranties VALUES ('WAR-009', 'Garantía Extendida', TO_DATE('2025-11-15','YYYY-MM-DD'), TO_DATE('2028-11-14','YYYY-MM-DD'), 'Sistema eléctrico y motor', 9);
 INSERT INTO warranties VALUES ('WAR-010', 'Garantía Fábrica', TO_DATE('2026-10-30','YYYY-MM-DD'), TO_DATE('2029-10-29','YYYY-MM-DD'), 'Cobertura total 3 años', 10);
 
--- 7. VENTAS (10 registros - Reporte 1: Ingresos por sucursal, tipo y vehículo)
+-- 7. VENTAS (10 registros - Reporte 1): relaciona clientes, vehiculos,
+-- sucursales y tipos de venta. seq_sales genera el identificador de cada venta.
 -- Usados (Tipo 2) y Nuevos (Tipo 1)
 INSERT INTO sales VALUES (seq_sales.NEXTVAL, TO_DATE('2025-02-15','YYYY-MM-DD'), 75000000, 'Crédito', 'C-1001', 1, 'BR-001', 2);
 INSERT INTO sales VALUES (seq_sales.NEXTVAL, TO_DATE('2026-03-20','YYYY-MM-DD'), 180000000, 'Contado', 'C-1002', 2, 'BR-002', 1);
@@ -91,7 +103,8 @@ INSERT INTO sales VALUES (seq_sales.NEXTVAL, TO_DATE('2026-10-01','YYYY-MM-DD'),
 INSERT INTO sales VALUES (seq_sales.NEXTVAL, TO_DATE('2025-04-12','YYYY-MM-DD'), 125000000, 'Transferencia', 'C-1003', 5, 'BR-001', 3);
 INSERT INTO sales VALUES (seq_sales.NEXTVAL, TO_DATE('2026-04-12','YYYY-MM-DD'), 125000000, 'Transferencia', 'C-1009', 6, 'BR-001', 3);
 
--- 8. ÓRDENES DE SERVICIO (10 registros - Reporte 2: Servicios, diagnósticos y seguros)
+-- 8. ORDENES DE SERVICIO (10 registros - Reporte 2): mezcla atenciones cubiertas
+-- por seguro y particulares; la ultima orden permanece abierta (exit_date NULL).
 -- Con seguro (insurance_id no nulo)
 INSERT INTO service_orders VALUES ('ORD-001', TO_DATE('2026-07-15','YYYY-MM-DD'), TO_DATE('2026-07-20','YYYY-MM-DD'), 16500, 'Reparación Choque', 'Reemplazo parachoques frontal y pintura', 3500000, 'C-1001', 1, 'BR-004', 'INS-001');
 INSERT INTO service_orders VALUES ('ORD-002', TO_DATE('2026-08-10','YYYY-MM-DD'), TO_DATE('2026-08-12','YYYY-MM-DD'), 5000, 'Mantenimiento Preventivo', 'Cambio de aceite y filtros', 450000, 'C-1002', 2, 'BR-001', 'INS-002');
@@ -105,4 +118,6 @@ INSERT INTO service_orders VALUES ('ORD-008', TO_DATE('2026-11-01','YYYY-MM-DD')
 INSERT INTO service_orders VALUES ('ORD-009', TO_DATE('2026-11-10','YYYY-MM-DD'), TO_DATE('2026-11-11','YYYY-MM-DD'), 25500, 'Revisión Eléctrica', 'Fallo en alternador', 680000, 'C-1010', 11, 'BR-004', NULL);
 INSERT INTO service_orders VALUES ('ORD-010', TO_DATE('2026-11-15','YYYY-MM-DD'), NULL, 2000, 'Garantía', 'Ruido anormal en suspensión delantera', 0, 'C-1007', 12, 'BR-001', NULL);
 
+-- Confirma la carga completa. Si ocurre un error, compruebe si esta linea llego
+-- a ejecutarse antes de decidir entre ROLLBACK o limpiar datos ya confirmados.
 COMMIT;

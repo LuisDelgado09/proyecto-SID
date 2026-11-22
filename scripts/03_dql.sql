@@ -2,12 +2,15 @@
 -- SCRIPT DQL - REPORTES DE LA CONCESIONARIA
 -- Motor: Oracle Database 12c o superior (por FETCH FIRST).
 -- Cada consulta tiene su proposito descrito en lenguaje natural.
+-- GUIA: ejecute el archivo con Run Script (F5). SQL Developer mostrara una
+-- grilla por cada SELECT; revise filas, columnas y orden de cada resultado.
 -- ==============================================================================
 
 -- REPORTE 1: ingresos por sucursal, modalidad de venta y vehiculo.
 -- Agrupa las ventas por las dimensiones solicitadas; el identificador de
 -- vehiculo conserva los dos Nissan Frontier como vehiculos distintos.
 -- Con el conjunto DML incluido, el reporte devuelve 10 vehiculos vendidos.
+-- Revise numero_ventas e ingresos para comparar el total por cada vehiculo.
 SELECT
     b.branch_id,
     b.name AS sucursal,
@@ -29,6 +32,7 @@ ORDER BY ingresos DESC, sucursal, v.vehicle_id;
 -- REPORTE 2: ordenes de servicio, cliente, vehiculo y cobertura de seguro.
 -- El LEFT JOIN conserva tambien las ordenes particulares sin poliza.
 -- Las 10 ordenes de prueba aparecen, incluidas las que tienen insurance_id NULL.
+-- Las ordenes sin poliza muestran el texto "Pago particular / sin aseguradora".
 SELECT
     so.order_id,
     so.entry_date,
@@ -48,6 +52,7 @@ ORDER BY so.entry_date, so.order_id;
 
 -- REPORTE 3: detalle de garantias y estado calculado a la fecha de consulta.
 -- Lista las 10 garantias cargadas y ordena primero las que vencen antes.
+-- El resultado puede cambiar con el paso del tiempo porque usa SYSDATE.
 SELECT
     w.warranty_id,
     v.vehicle_id,
@@ -68,6 +73,7 @@ ORDER BY w.end_date, w.warranty_id;
 
 -- REPORTE 4 (TOP 5): vehiculos con mayor kilometraje registrado.
 -- FETCH FIRST limita el resultado a los cinco registros de mayor kilometraje.
+-- El desempate por vehicle_id hace estable el orden cuando coinciden kilometrajes.
 SELECT
     vehicle_id,
     brand,
