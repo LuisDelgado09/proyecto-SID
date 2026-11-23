@@ -27,7 +27,7 @@ CREATE TABLE customers (
     email            VARCHAR2(100),
     registration_date DATE,
     CONSTRAINT pk_customers PRIMARY KEY (customer_id),
-    CONSTRAINT uq_customer_doc UNIQUE (document_number)
+    CONSTRAINT uq_customer_doc UNIQUE (document_type, document_number)
 );
 
 -- TIPOS DE VENTA: catalogo que clasifica ventas individuales o corporativas.
@@ -95,7 +95,7 @@ CREATE TABLE insurances (
     end_date         DATE NOT NULL,
     vehicle_id       INTEGER NOT NULL,
     CONSTRAINT pk_insurances PRIMARY KEY (insurance_id),
-    CONSTRAINT uq_insurance_policy UNIQUE (policy_number),
+    CONSTRAINT uq_insurance_policy UNIQUE (insurance_company, policy_number),
     CONSTRAINT fk_insurances_vehicle FOREIGN KEY (vehicle_id) REFERENCES vehicles(vehicle_id),
     CONSTRAINT chk_insurance_dates CHECK (end_date >= start_date)
 );

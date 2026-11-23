@@ -81,5 +81,5 @@ SELECT
     license_plate,
     mileage
 FROM vehicles
-ORDER BY mileage DESC, vehicle_id
+ORDER BY mileage DESC NULLS LAST, vehicle_id
 FETCH FIRST 5 ROWS ONLY;
