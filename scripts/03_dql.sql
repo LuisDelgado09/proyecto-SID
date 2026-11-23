@@ -60,7 +60,7 @@ FROM warranties w
 INNER JOIN vehicles v ON v.vehicle_id = w.vehicle_id
 ORDER BY w.end_date, w.warranty_id;
 
--- Reporte 4: muestra los cinco vehículos con más kilómetros.
+-- Reporte 4: muestra los diez vehículos con más kilómetros (TOP 10).
 SELECT
     vehicle_id,
     brand,
@@ -69,4 +69,4 @@ SELECT
     mileage
 FROM vehicles
 ORDER BY mileage DESC, vehicle_id
-FETCH FIRST 5 ROWS ONLY;
+FETCH FIRST 10 ROWS ONLY;

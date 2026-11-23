@@ -19,12 +19,12 @@ Oracle vacío y ejecútalos en este orden:
 1. `01_ddl.sql` crea las tablas y sus relaciones.
 2. `02_dml.sql` agrega los datos de prueba. Hay 10 ventas, 10 órdenes de
    servicio y 10 garantías.
-3. `03_dql.sql` contiene los reportes de ventas, servicios, garantías y el TOP 5.
+3. `03_dql.sql` contiene los reportes de ventas, servicios, garantías y el TOP 10.
 4. `04_plsql.sql` crea un procedimiento, una función y un trigger.
 
 Los dos primeros scripts se deben ejecutar una sola vez: si las tablas o los
 datos ya existen, se producirán errores. En SQL Developer usa **Run Script
-(F5)** para cada archivo. El reporte TOP 5 necesita Oracle 12c o una versión
+(F5)** para cada archivo. El reporte TOP 10 necesita Oracle 12c o una versión
 más reciente.
 
 ## Archivos de apoyo
