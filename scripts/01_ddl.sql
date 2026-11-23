@@ -1,22 +1,17 @@
 -- ==============================================================================
 -- SCRIPT DDL - SISTEMA DE CONCESIONARIA
--- Motor: Oracle Database. Ejecutar una sola vez en un esquema vacio.
--- Crea catalogos, entidades, relaciones, restricciones, indices y auditoria.
--- GUIA: en SQL Developer, conectese al esquema de trabajo y ejecute el archivo
--- completo con Run Script (F5). No lo ejecute sobre un esquema que ya tenga
--- estos objetos: no contiene DROP y Oracle avisara que los objetos existen.
--- Al terminar, continúe con 02_dml.sql; este archivo no carga datos de prueba.
+-- Este archivo crea la estructura de la base de datos.
+-- Ejecútelo una sola vez en un esquema vacío, usando Run Script (F5).
+-- Cuando termine, siga con 02_dml.sql.
 -- ==============================================================================
 
--- 1. SECUENCIAS: asignan consecutivos a tipos de venta, vehiculos, ventas y
--- auditoria. En una instalacion nueva, los datos de prueba empezaran en 1.
+-- Las secuencias generan los IDs para estas tablas.
 CREATE SEQUENCE seq_sale_types START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_vehicles START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_sales START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_sales_audit START WITH 1 INCREMENT BY 1;
 
--- 2. TABLAS BASE: primero se crean las entidades sin FK a otras tablas.
--- CLIENTES: personas naturales o juridicas que compran o solicitan servicios.
+-- Clientes de la concesionaria.
 CREATE TABLE customers (
     customer_id      VARCHAR2(20) NOT NULL,
     document_type    VARCHAR2(10) NOT NULL, -- Ej: 'CC', 'NIT', 'CE'
@@ -30,14 +25,14 @@ CREATE TABLE customers (
     CONSTRAINT uq_customer_doc UNIQUE (document_number)
 );
 
--- TIPOS DE VENTA: catalogo que clasifica ventas individuales o corporativas.
+-- Tipos de venta disponibles.
 CREATE TABLE sale_types (
     sale_type_id     INTEGER NOT NULL,
     description      VARCHAR2(50) NOT NULL,
     CONSTRAINT pk_sale_types PRIMARY KEY (sale_type_id)
 );
 
--- SUCURSALES: entidad general; branch_type indica el subtipo correspondiente.
+-- Sucursales. branch_type indica si es mixta, concesionario o taller.
 CREATE TABLE branches (
     branch_id        VARCHAR2(10) NOT NULL,
     name             VARCHAR2(100) NOT NULL,
@@ -49,8 +44,7 @@ CREATE TABLE branches (
     CONSTRAINT chk_branch_type CHECK (branch_type IN ('MIXED', 'DEALERSHIP', 'WORKSHOP'))
 );
 
--- 3. SUBTIPOS de sucursal: cada PK tambien es FK a branches. Esto evita crear
--- un subtipo sin su sucursal padre; branch_type registra la categoria general.
+-- Tablas para los tres tipos de sucursal. Cada fila debe existir en branches.
 CREATE TABLE mixed_branches (
     branch_id        VARCHAR2(10) NOT NULL,
     CONSTRAINT pk_mixed_branches PRIMARY KEY (branch_id),
@@ -69,8 +63,7 @@ CREATE TABLE workshop_branches (
     CONSTRAINT fk_workshop_branch FOREIGN KEY (branch_id) REFERENCES branches(branch_id)
 );
 
--- 4. TABLAS OPERATIVAS: se crean despues de sus padres para poder declarar FKs.
--- VEHICULOS: inventario identificado por VIN y placa.
+-- Vehículos del inventario.
 CREATE TABLE vehicles (
     vehicle_id       INTEGER NOT NULL,
     vin              VARCHAR2(17) NOT NULL,
@@ -86,7 +79,7 @@ CREATE TABLE vehicles (
     CONSTRAINT chk_vehicle_mileage CHECK (mileage IS NULL OR mileage >= 0)
 );
 
--- SEGUROS: polizas asociadas al vehiculo asegurado.
+-- Seguros asociados a vehículos.
 CREATE TABLE insurances (
     insurance_id     VARCHAR2(20) NOT NULL,
     insurance_company VARCHAR2(100) NOT NULL,
@@ -101,7 +94,7 @@ CREATE TABLE insurances (
 );
 CREATE INDEX idx_insurances_veh ON insurances(vehicle_id);
 
--- GARANTIAS: cobertura y condiciones asociadas a un vehiculo.
+-- Garantías asociadas a vehículos.
 CREATE TABLE warranties (
     warranty_id      VARCHAR2(20) NOT NULL,
     warranty_type    VARCHAR2(50) NOT NULL,
@@ -115,7 +108,7 @@ CREATE TABLE warranties (
 );
 CREATE INDEX idx_warranties_veh ON warranties(vehicle_id);
 
--- VENTAS: transacciones entre un cliente y una sucursal para un vehiculo.
+-- Ventas de vehículos.
 CREATE TABLE sales (
     sale_id          INTEGER NOT NULL,
     sale_date        DATE NOT NULL,
@@ -137,8 +130,7 @@ CREATE INDEX idx_sales_vehicle ON sales(vehicle_id);
 CREATE INDEX idx_sales_branch ON sales(branch_id);
 CREATE INDEX idx_sales_sale_type ON sales(sale_type_id);
 
--- AUDITORIA DE VENTAS: conserva los datos de ventas insertadas mediante el trigger.
--- No tiene FK a sales para preservar el historial ante cambios futuros en ventas.
+-- Tabla donde el trigger guarda los datos básicos de cada venta nueva.
 CREATE TABLE sales_audit (
     audit_id         INTEGER NOT NULL,
     sale_id          INTEGER NOT NULL,
@@ -148,7 +140,7 @@ CREATE TABLE sales_audit (
     CONSTRAINT pk_sales_audit PRIMARY KEY (audit_id)
 );
 
--- ORDENES DE SERVICIO: diagnostico, costos y atencion del vehiculo.
+-- Órdenes de servicio. El seguro puede quedar vacío si el cliente paga por su cuenta.
 CREATE TABLE service_orders (
     order_id         VARCHAR2(20) NOT NULL,
     entry_date       DATE NOT NULL,
@@ -175,8 +167,7 @@ CREATE INDEX idx_orders_vehicle ON service_orders(vehicle_id);
 CREATE INDEX idx_orders_branch ON service_orders(branch_id);
 CREATE INDEX idx_orders_insurance ON service_orders(insurance_id);
 
--- 5. DICCIONARIO DE DATOS: estos comentarios se pueden consultar desde las
--- propiedades de tablas/columnas en SQL Developer o en USER_TAB_COMMENTS.
+-- Descripciones que se pueden ver en las propiedades de las tablas.
 COMMENT ON TABLE customers IS 'Clientes naturales o juridicos de la concesionaria.';
 COMMENT ON TABLE sale_types IS 'Catalogo de modalidades de venta.';
 COMMENT ON TABLE branches IS 'Sucursales y tipo de operacion.';

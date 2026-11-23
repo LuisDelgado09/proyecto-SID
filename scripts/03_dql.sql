@@ -1,16 +1,9 @@
 -- ==============================================================================
 -- SCRIPT DQL - REPORTES DE LA CONCESIONARIA
--- Motor: Oracle Database 12c o superior (por FETCH FIRST).
--- Cada consulta tiene su proposito descrito en lenguaje natural.
--- GUIA: ejecute el archivo con Run Script (F5). SQL Developer mostrara una
--- grilla por cada SELECT; revise filas, columnas y orden de cada resultado.
+-- Consultas para los reportes. Ejecute este archivo con Run Script (F5).
 -- ==============================================================================
 
--- REPORTE 1: ingresos por sucursal, modalidad de venta y vehiculo.
--- Agrupa las ventas por las dimensiones solicitadas; el identificador de
--- vehiculo conserva los dos Nissan Frontier como vehiculos distintos.
--- Con el conjunto DML incluido, el reporte devuelve 10 vehiculos vendidos.
--- Revise numero_ventas e ingresos para comparar el total por cada vehiculo.
+-- Reporte 1: suma las ventas por sucursal, tipo de venta y vehículo.
 SELECT
     b.branch_id,
     b.name AS sucursal,
@@ -29,10 +22,8 @@ GROUP BY
     v.vehicle_id, v.brand, v.model
 ORDER BY ingresos DESC, sucursal, v.vehicle_id;
 
--- REPORTE 2: ordenes de servicio, cliente, vehiculo y cobertura de seguro.
--- El LEFT JOIN conserva tambien las ordenes particulares sin poliza.
--- Las 10 ordenes de prueba aparecen, incluidas las que tienen insurance_id NULL.
--- Las ordenes sin poliza muestran el texto "Pago particular / sin aseguradora".
+-- Reporte 2: muestra las órdenes con cliente, vehículo y aseguradora.
+-- LEFT JOIN permite incluir órdenes que no tienen seguro.
 SELECT
     so.order_id,
     so.entry_date,
@@ -50,9 +41,7 @@ INNER JOIN vehicles v ON v.vehicle_id = so.vehicle_id
 LEFT JOIN insurances i ON i.insurance_id = so.insurance_id
 ORDER BY so.entry_date, so.order_id;
 
--- REPORTE 3: detalle de garantias y estado calculado a la fecha de consulta.
--- Lista las 10 garantias cargadas y ordena primero las que vencen antes.
--- El resultado puede cambiar con el paso del tiempo porque usa SYSDATE.
+-- Reporte 3: muestra las garantías y calcula si están vigentes hoy.
 SELECT
     w.warranty_id,
     v.vehicle_id,
@@ -71,9 +60,7 @@ FROM warranties w
 INNER JOIN vehicles v ON v.vehicle_id = w.vehicle_id
 ORDER BY w.end_date, w.warranty_id;
 
--- REPORTE 4 (TOP 5): vehiculos con mayor kilometraje registrado.
--- FETCH FIRST limita el resultado a los cinco registros de mayor kilometraje.
--- El desempate por vehicle_id hace estable el orden cuando coinciden kilometrajes.
+-- Reporte 4: muestra los cinco vehículos con más kilómetros.
 SELECT
     vehicle_id,
     brand,
