@@ -1,17 +1,9 @@
 -- ==============================================================================
--- SCRIPT PL/SQL - OPERACION Y AUDITORIA DE VENTAS
--- Ejecutar despues de 01_ddl.sql y 02_dml.sql.
--- GUIA: ejecute todo el archivo con Run Script (F5), no sentencia por sentencia.
--- El caracter / en una linea separada indica a SQL Developer que compile cada
--- unidad PL/SQL. Si aparece INVALID, consulte los errores de compilacion abajo.
+-- Ejecute este archivo con Run Script (F5), después de crear las tablas.
 -- ==============================================================================
 
--- PROCEDIMIENTO: registra una venta y devuelve el identificador asignado.
--- La secuencia genera la PK; las FK y restricciones de la tabla validan
--- cliente, vehiculo, sucursal, tipo de venta y precio. No confirma la transaccion:
--- el control del COMMIT o ROLLBACK corresponde al usuario que llama al procedimiento.
--- Entradas: fecha, precio, forma de pago, cliente, vehiculo, sucursal y tipo.
--- Salida: p_sale_id recibe el identificador asignado a la venta.
+-- Procedimiento para agregar una venta. Devuelve el ID generado.
+-- Si el precio no es mayor que cero, muestra un error.
 CREATE OR REPLACE PROCEDURE pr_registrar_venta (
     p_sale_date      IN  DATE,
     p_sale_price     IN  NUMBER,
@@ -39,11 +31,8 @@ BEGIN
 END;
 /
 
--- FUNCION: informa el estado de la garantia con vencimiento mas reciente
--- del vehiculo consultado. Devuelve SIN GARANTIA cuando no hay cobertura.
--- Para probarla desde SQL, ejecute: SELECT fn_estado_garantia(1) FROM dual;
--- Sustituya 1 por un vehicle_id existente; el resultado es VIGENTE, VENCIDA
--- o SIN GARANTIA.
+-- Función que revisa la garantía con la fecha de vencimiento más lejana.
+-- Devuelve VIGENTE, VENCIDA o SIN GARANTIA.
 CREATE OR REPLACE FUNCTION fn_estado_garantia (
     p_vehicle_id IN INTEGER
 ) RETURN VARCHAR2
@@ -71,10 +60,7 @@ EXCEPTION
 END;
 /
 
--- TRIGGER: guarda una copia de los datos esenciales de cada nueva venta.
--- Es de solo insercion; no modifica la venta ni confirma la transaccion.
--- Se dispara automaticamente en INSERT sobre sales. Las ventas cargadas antes
--- de crear este trigger no se auditan; revise sales_audit tras insertar una venta.
+-- Trigger que guarda algunos datos cuando se agrega una venta.
 CREATE OR REPLACE TRIGGER trg_auditar_venta
 AFTER INSERT ON sales
 FOR EACH ROW
@@ -84,11 +70,8 @@ BEGIN
 END;
 /
 
--- EJEMPLO OPCIONAL PARA PROBAR PROCEDIMIENTO + TRIGGER SIN DEJAR CAMBIOS:
--- En SQL Developer, active DBMS Output y descomente/ejecute este bloque. Usa
--- customer C-1001, vehicle 11, branch BR-001 y sale_type 1 del DML de prueba.
--- ROLLBACK revierte tanto la venta como su fila de auditoria; la secuencia puede
--- avanzar igualmente, lo cual es normal en Oracle.
+-- Ejemplo opcional para probar el procedimiento y el trigger.
+-- El ROLLBACK evita guardar la venta de prueba.
 --
 -- DECLARE
 --     v_sale_id INTEGER;
@@ -102,7 +85,7 @@ END;
 -- END;
 -- /
 --
--- Para revisar compilacion y estado de los tres objetos:
+-- Para revisar si los objetos se crearon correctamente:
 -- SELECT object_name, object_type, status
 -- FROM user_objects
 -- WHERE object_name IN ('PR_REGISTRAR_VENTA', 'FN_ESTADO_GARANTIA',

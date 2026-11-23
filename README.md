@@ -1,9 +1,9 @@
-# Proyecto de Bases de Datos Relacionales (SID)
+# Proyecto SID: base de datos de una concesionaria
 
-Sistema de concesionaria para gestionar clientes, sucursales, vehiculos,
-ventas, seguros, garantias y ordenes de servicio. El modelo entidad-relacion y
-relacional se conserva en `docs/modelos/` y el proyecto de Oracle Data Modeler
-en `datamodeler/`.
+Este proyecto organiza la información de clientes, sucursales, vehículos,
+ventas, seguros, garantías y órdenes de servicio. Los modelos y actas del
+trabajo están en la carpeta `docs/`. El modelo de Oracle Data Modeler está en
+`datamodeler/`.
 
 ## Integrantes
 
@@ -13,29 +13,25 @@ en `datamodeler/`.
 
 ## Scripts de entrega
 
-Los scripts estan en `scripts/` y deben ejecutarse en este orden, conectados a
-un esquema Oracle vacio:
+Los archivos SQL están en `scripts/`. Para probarlos, conéctate a un esquema
+Oracle vacío y ejecútalos en este orden:
 
-1. `01_ddl.sql`: crea secuencias, tablas, restricciones, indices y comentarios
-   del diccionario de datos.
-2. `02_dml.sql`: inserta los datos de prueba (10 ventas, 10 ordenes de servicio
-   y 10 garantias, entre otros) y confirma la carga.
-3. `03_dql.sql`: ejecuta los reportes de ventas, servicios, garantias y el TOP 5.
-4. `04_plsql.sql`: crea el procedimiento `pr_registrar_venta`, la funcion
-   `fn_estado_garantia` y el trigger `trg_auditar_venta`.
+1. `01_ddl.sql` crea las tablas y sus relaciones.
+2. `02_dml.sql` agrega los datos de prueba. Hay 10 ventas, 10 órdenes de
+   servicio y 10 garantías.
+3. `03_dql.sql` contiene los reportes de ventas, servicios, garantías y el TOP 10.
+4. `04_plsql.sql` crea un procedimiento, una función y un trigger.
 
-Los archivos DDL y DML se ejecutan una sola vez en un esquema nuevo; no son
-scripts de reinstalacion y fallaran si ya existen los objetos o los datos.
-`03_dql.sql` usa `FETCH FIRST`, por lo que requiere Oracle Database 12c o
-superior. En SQL Developer se recomienda abrir cada archivo y usar **Run
-Script (F5)**, especialmente para compilar los bloques PL/SQL delimitados por
-`/`.
+Los dos primeros scripts se deben ejecutar una sola vez: si las tablas o los
+datos ya existen, se producirán errores. En SQL Developer usa **Run Script
+(F5)** para cada archivo. El reporte TOP 10 necesita Oracle 12c o una versión
+más reciente.
 
-## Evidencia y documentacion
+## Archivos de apoyo
 
-- `docs/riesgos-uso-ia-generativa.md`: riesgos y controles para el uso
-  profesional de herramientas de IA generativa.
-- `docs/modelos/`: versiones del modelo de datos.
-- `docs/actas/`: actas de reuniones del equipo.
-- `docs/dependencias funcionales/`: dependencias funcionales del modelo.
+- `docs/riesgos-uso-ia-generativa.md` resume riesgos de usar IA para trabajar
+  con bases de datos.
+- `docs/modelos/` contiene las versiones de los modelos.
+- `docs/actas/` contiene las actas de reunión.
+- `docs/dependencias funcionales/` contiene las dependencias funcionales.
 
